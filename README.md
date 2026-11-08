@@ -12,23 +12,39 @@
   2. Extract the files
   3. Open the .exe file
 
-### Short description to each of the Blueprints
-BP_Coin: stores and adds the score. Mesh of the coin rotates every frame and when collides with a BP_Hero which plays a sound, spawns FX and calls the AddScore function  
-BP_Hero: modified copy of the preset third person character. The HUD widget and background loop music is created in here. Also there is a simple sprint logic
-Enemy:
-  1. ABP_Enemy: animation blueprint of the enemy. Copied and slightly modified from the third person character from the presets
-  2. BP_Enemy: physical character that chases player. The lose logic is stored in here
-  3. BP_EnemyAIController: main "brain" of the enemy. The AI Sight logic is stored in here
-  4. BP_PatrolPoint: patrol point for the enemy
-  5. BB_Enemy: blackboard of the enemy
-  6. BT_Enemy: behaviour tree of the enemy
-  7. BTT_NextPatrolPoint: custom task that picks the patrol point from the array of the patrol points
-Game:  
-  1. BP_GameMode: custom game mode for the game. Has no logic at all
-  2. BP_GameState: the state blueprint of the game. Almost all of the game logic is placed in here
-FX:
-  1. NS_CoinPickup: Niagara System that is created from the Fountain preset. Slightly modified
-  2. BP_CameraShake: simple camera shake blueprint
+### Controls:
+WASD - move
+Mouse - look
+SPACE - jump
+LSHIFT - sprint
+ESCAPE - pause
+
+### Short description of each Blueprint
+
+**Core**
+
+- **BP_Coin:** a collectible. Its mesh rotates every frame. When it overlaps BP_Hero, it plays a sound, spawns FX and calls the AddScore function in BP_GameState.
+- **BP_Hero:** a modified copy of the preset Third Person character. It creates the HUD widget and the background loop music, and contains the sprint logic.
+
+**Enemy**
+
+- **ABP_Enemy:** the enemy's animation blueprint, copied and slightly modified from the Third Person character.
+- **BP_Enemy:** the enemy character that chases the player. The lose logic is stored here.
+- **BP_EnemyAIController:** the enemy's "brain". The AI Sight logic is stored here.
+- **BP_PatrolPoint:** a patrol point for the enemy.
+- **BB_Enemy:** the enemy's blackboard.
+- **BT_Enemy:** the enemy's behaviour tree.
+- **BTT_NextPatrolPoint:** a custom task that picks the next patrol point from the array of patrol points.
+
+**Game**
+
+- **BP_GameMode:** the custom game mode. It contains no logic.
+- **BP_GameState:** stores the score and the game state. Almost all of the game logic is placed here.
+
+**FX**
+
+- **NS_CoinPickup:** a Niagara System created from the Fountain preset and slightly modified.
+- **BP_CameraShake:** a simple camera shake blueprint.
 
 ## Development breakdown
 ### Setup
