@@ -13,13 +13,13 @@
   3. Open the .exe file
 
 ### Controls:
-WASD - move
-Mouse - look
-SPACE - jump
-LSHIFT - sprint
-ESCAPE - pause
+- WASD - move
+- Mouse - look
+- SPACE - jump
+- LSHIFT - sprint
+- ESCAPE - pause
 
-### Short description of each Blueprint
+## Short description of each Blueprint
 
 **Core**
 
