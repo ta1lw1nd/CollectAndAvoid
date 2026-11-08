@@ -5,10 +5,10 @@
 **Engine Version:** 5.8.4
 
 ### Showcase video:
-(Link)
+[(Link)](https://youtu.be/pDpopPaOG1A)
 
 ### How to run the game:
-  1. Download the CollectAndAvoid_ta1lw1nd.zip archive from this link: (Link)
+  1. Download the CollectAndAvoid_ta1lw1nd.zip archive from this link:  [(Link)](https://drive.google.com/file/d/1Sx5g4XpFw3VfJovLa0gJVbG9uok5Dvnb/view?usp=drive_link)
   2. Extract the files
   3. Open the .exe file
 
@@ -72,4 +72,12 @@ Two actions feedback:
   1. The coin creates simple NiagaraSystem when taken by the player
   2. Tha player`s camera shakes when Enemy sees BP_Hero
 
-All of the sounds are created by myself 
+### Asset list
+| Asset | Used for | Source | Licence |
+|---|---|---|---|
+| Third person template (character, mannequin, animations, input assets) | BP_Hero, ABP_Enemy, BP_Enemy | Unreal Engine Third Person template (Epic Games) | Unreal Engine EULA |
+| Collect sound | Coin pickup | Created by me | Own work, no restrictions |
+| Chase sound | Enemy starts chasing | Created by me | Own work, no restrictions |
+| Background music loop | Music in BP_Hero | Created by me | Own work, no restrictions |
+
+All sounds were created by me from scratch: the collect and chase sounds, as well as the background loop were created in **FL Studio**
